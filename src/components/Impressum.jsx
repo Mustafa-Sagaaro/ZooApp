@@ -3,7 +3,9 @@ import "../styles/Impressum.css"
 function Impressum() {
   return (
     <div className="impressum">
-      <h2>IMPRESSUM</h2>
+      <section className="Header">
+        <h1>Impressum</h1>
+      </section>
       <section className="contact-address">
         <h3>KONTAKTADRESSE</h3>
         <p>Zoo Zürich AG</p>

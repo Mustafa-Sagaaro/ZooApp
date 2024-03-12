@@ -1,17 +1,15 @@
 .impressum {
     font-family: Arial, sans-serif;
     max-width: 800px;
-    margin: 20px auto;
+    margin: auto;
     padding: 20px;
-    background-color: #f4f4f4;
-    color: #333;
+    color: #ffffff;
   }
   
   .impressum h2 {
     font-size: 24px;
-    margin-bottom: 20px;
   }
-  
+
   .impressum h3 {
     font-size: 18px;
     margin-top: 20px;
