@@ -1,7 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar';
-import Impressum from './components/Impressum'; // Import the Impressum component
+import Impressum from './components/Impressum';
+import Interaktionen from './components/Interaktionen'; 
+
 
 function App() {
   return (
@@ -9,6 +11,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/impressum" element={<Impressum />} /> 
+        <Route path="/Interaktionen" element={<Interaktionen />} /> 
       </Routes>
     </BrowserRouter>
   );
