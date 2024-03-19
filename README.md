@@ -12,16 +12,16 @@ Die ZooApp ist eine interaktive Webapplikation, entwickelt mit React, die Besuch
 
 ## Einleitung
 
-Die ZooApp entstand als Projekt, um die Bedeutung von Zoos und die Artenvielfalt auf unserem Planeten hervorzuheben. Durch die Verwendung moderner Technologien bietet unsere App eine informative und unterhaltsame Plattform für alle Altersgruppen. Dieses Projekt ist das Ergebnis der Zusammenarbeit von [Mustafa Sagaaro](https://github.com/Mustafa-Sagaaro), Lion Hereqi und Andrin Britschgi.
+Dieses Projekt ist das Ergebnis der Zusammenarbeit von Mustafa Sagaaro, Lion Hereqi und Andrin Britschgi.
 
 GitHub-Repo: [ZooApp](https://github.com/Mustafa-Sagaaro/ZooApp)
 
 ## Funktionen
 
 - **Tierprofile**: Entdecken Sie detaillierte Informationen über die verschiedenen Tierarten im Zoo, einschließlich ihrer natürlichen Lebensräume, Ernährung und Erhaltungsstatus.
-- **Interaktive Karte**: Navigieren Sie durch den virtuellen Zoo mit einer interaktiven Karte, die es Ihnen ermöglicht, verschiedene Tiergehege zu besuchen.
-- **Lernspiele**: Nehmen Sie an verschiedenen Lernspielen teil, um Ihr Wissen über Tiere und Naturschutz zu testen und zu erweitern.
-- **Veranstaltungsplaner**: Bleiben Sie auf dem Laufenden über bevorstehende Veranstaltungen und Aktivitäten im Zoo.
+- **Interaktionen**: Navigieren Sie durch den Zoo mit interaktionen, die es Ihnen ermöglicht, verschiedene Tiergehege zu besuchen.
+- **Lernspiele**: Nehmen Sie an unserem Quiz teil, um Ihr Wissen über Tiere und Naturschutz zu testen und zu erweitern.
+- **News**: Bleiben Sie auf dem Laufenden über bevorstehende Veranstaltungen und Aktivitäten im Zoo.
 
 ## Technologien
 
@@ -42,4 +42,10 @@ git clone https://github.com/Mustafa-Sagaaro/ZooApp.git
 
 Danach Können sie
 
-cd Zo
+cd ZooApp
+und
+npm install
+
+Zum schluss starten mit
+
+Npm run dev
