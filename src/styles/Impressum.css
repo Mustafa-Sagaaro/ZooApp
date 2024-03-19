@@ -4,7 +4,12 @@
     margin: auto;
     padding: 20px;
     color: #ffffff;
+    height: 90vh;
+    margin-top: 10rem;
+
   }
+
+
   
   .impressum h2 {
     font-size: 24px;

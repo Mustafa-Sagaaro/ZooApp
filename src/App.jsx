@@ -1,9 +1,10 @@
 import 'react';
-import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 import './App.css';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer'
 import Impressum from './components/Impressum';
 import Interaktionen from './components/Interaktionen';
 import ZooNewsComponent from "./components/News"
@@ -13,10 +14,12 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/impressum" element={<ImpressumPage />} /> 
+        <Route path="/impressum" element={<ImpressumPage />} />
         <Route path="/Interaktionen" element={<InteraktionenPage />} />
-        <Route path="/News" element={<NewsPage />} /> 
+        <Route path="/News" element={<NewsPage />} />
+
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

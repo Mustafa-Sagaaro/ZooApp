@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import logo from '/LogoNavbar.png';
+import logo from '/Logo.png';
 import "../styles/Navbar.css"
 
 function Navbar() {
@@ -16,7 +16,7 @@ function Navbar() {
         {mobileMenuOpen ? <FaTimes /> : <FaBars />}
       </div>
       <div className="logo">
-        <img className='Logo' src={logo} alt="Logo" />
+        <img className='Logo' href='/Home' src={logo} alt="Logo" />
       </div>
       <ul className={`nav-links ${mobileMenuOpen ? 'open' : ''}`}>
         {}
