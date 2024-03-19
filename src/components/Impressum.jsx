@@ -24,10 +24,10 @@ function Impressum() {
       <section className="technical-partner">
         <h3>TECHNISCHER PARTNER</h3>
         <p>Frontend- & Backend-Umsetzung:</p>
-        <p>Liip AG</p>
-        <p>Limmatstrasse 183</p>
+        <p>BBW</p>
+        <p>Teststrasse 183</p>
         <p>8005 Zürich</p>
-        <p>Website: <a href="https://www.liip.ch" target="_blank" rel="noopener noreferrer">liip.ch</a></p>
+        <p>Website: <a href="" target="" rel="">Mustafa Sagaaro</a></p>
       </section>
     </div>
   );

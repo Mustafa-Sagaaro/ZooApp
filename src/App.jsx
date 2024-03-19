@@ -8,12 +8,14 @@ import Footer from './components/Footer'
 import Impressum from './components/Impressum';
 import Interaktionen from './components/Interaktionen';
 import ZooNewsComponent from "./components/News"
+import Home from './components/Home'
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
+        <Route path="/" element={<HomePage />} />
         <Route path="/impressum" element={<ImpressumPage />} />
         <Route path="/Interaktionen" element={<InteraktionenPage />} />
         <Route path="/News" element={<NewsPage />} />
@@ -38,6 +40,11 @@ const AnimatedPage = ({ children }) => (
 const ImpressumPage = () => (
   <AnimatedPage>
     <Impressum />
+  </AnimatedPage>
+);
+const HomePage = () => (
+  <AnimatedPage>
+    <Home />
   </AnimatedPage>
 );
 const NewsPage = () => (

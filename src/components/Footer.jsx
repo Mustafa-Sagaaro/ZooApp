@@ -7,10 +7,10 @@ const Footer = () => {
                 <img src="./Logo.png" alt="Logo" />
             </div>
             <div className="footer-links">
-                <a href="localhost:5173/Interaktionen">Home</a>
-                <a href="localhost:5173/Interaktionen">Interaktionen</a>
-                <a href="localhost:5173/News">News</a>
-                <a href="localhost:5173/Impressum">Impressum</a>
+                <a href="/">Home</a>
+                <a href="/Interaktionen">Interaktionen</a>
+                <a href="/News">News</a>
+                <a href="/Impressum">Impressum</a>
             </div>
             <div className="footer-copy">
                 © Zoo- Zürich
