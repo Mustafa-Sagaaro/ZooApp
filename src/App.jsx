@@ -21,6 +21,7 @@ function App() {
   );
 }
 
+// eslint-disable-next-line react/prop-types
 const AnimatedPage = ({ children }) => (
   <motion.div
     initial={{ opacity: 0 }}

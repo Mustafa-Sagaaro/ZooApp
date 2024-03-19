@@ -4,7 +4,6 @@ import "react-alice-carousel/lib/alice-carousel.css";
 import "../styles/News.css";
 
 const ZooNewsComponent = () => {
-  // Definieren Sie die Iframe-Elemente als Carousel-Elemente
   const items = [
     <div className="item" key="1">
       <img src="https://zoo-live.rokka.io/home_landscape_lg_1x/b1b42724d18f8e2c53c5df03cb2fa8336d6922bd/m-nz8-9064-threskiornis-bernieri.jpg?h=820d9804&itok=AQviiBqh" alt="" />
@@ -32,7 +31,7 @@ const ZooNewsComponent = () => {
     <div className="zoo-news-container">
       <h1>Willkommen zu den neuesten Zoo-News!</h1>
       <AliceCarousel
-        //autoPlay={true}
+        autoPlay={true}
         autoPlayInterval={2000}
         mouseTracking={true}
         items={items}
