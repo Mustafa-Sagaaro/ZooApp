@@ -9,6 +9,7 @@ import Impressum from './components/Impressum';
 import Interaktionen from './components/Interaktionen';
 import ZooNewsComponent from "./components/News"
 import Home from './components/Home'
+import NewsDetails from './components/NewsDetails';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
         <Route path="/impressum" element={<ImpressumPage />} />
         <Route path="/Interaktionen" element={<InteraktionenPage />} />
         <Route path="/News" element={<NewsPage />} />
-
+        <Route path="/news/:newsId" element={<NewsDetailsPage />} /> {/* New route for news details */}
       </Routes>
       <Footer />
     </BrowserRouter>
@@ -35,6 +36,11 @@ const AnimatedPage = ({ children }) => (
   >
     {children}
   </motion.div>
+);
+const NewsDetailsPage = () => (
+  <AnimatedPage>
+    <NewsDetails />
+  </AnimatedPage>
 );
 
 const ImpressumPage = () => (
