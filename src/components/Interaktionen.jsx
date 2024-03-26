@@ -5,7 +5,7 @@ const Interaktionen = () => {
         <div className='Interaktionen' >
             
             <h1>Holle das Maximum aus deinem Besuch!</h1>
-            <div className="button-container">
+            <div className="button-container"> 
                 <button className="custom-button">Audioführung</button>
                 <button className="custom-button">Kurzfilme</button>
             </div>
