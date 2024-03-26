@@ -6,13 +6,11 @@
     color: #ffffff;
     display: flex; 
     flex-wrap: wrap;
-    height: 95vh;
     justify-content: center;
 }
 
 .zoo-news-container h1{
     font-size: 32px;
-    margin-top: 25%;
     text-align: center;
 }
 
