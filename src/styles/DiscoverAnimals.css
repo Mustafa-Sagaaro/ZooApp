@@ -1,0 +1,65 @@
+.discover-animals {
+  display: grid;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: rgb(255, 255, 255);
+}
+
+.entdecken {
+    height: 80vh;
+}
+
+.animal-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.animal-header,
+.animal-details,
+.animal-description,
+.search-again {
+  grid-column: span 2;
+  font-size: 18px;
+}
+
+input[type="text"] {
+  height: 50px;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 18px;
+}
+.animal-image {
+  grid-column: span 2;
+}
+
+.animal-image img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .animal-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.search-again {
+    justify-self: flex-end;
+    position: absolute;
+}
+
+h1 {
+  border-bottom: 2px solid #eaecef;
+  padding-bottom: 50px;
+}
+
+
+.animal-description {
+    margin-bottom: 100px;
+}

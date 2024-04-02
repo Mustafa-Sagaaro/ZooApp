@@ -19,11 +19,11 @@ const NewsDetails = () => {
 
     <article className="blog-post">
       <img
-        src="https://cdn.iconscout.com/icon/free/png-256/free-back-arrow-1767507-1502574.png" // Pfad zu deinem Zurück-Icon
+        src="https://cdn.iconscout.com/icon/free/png-256/free-back-arrow-1767507-1502574.png" 
         alt="Go back"
 
         onClick={goBack}
-        style={{ cursor: 'pointer', width: '50px'}} // Cursor-Stil hinzufügen, um Klickbarkeit anzuzeigen
+        style={{ cursor: 'pointer', width: '50px'}} 
       />
       <header className="blog-post-header">
         <h1 className="blog-post-title">{newsItem.title}</h1>
