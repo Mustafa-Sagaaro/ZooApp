@@ -11,6 +11,10 @@ const Home = () => {
     const navigateToDiscoverAnimals = () => {
         navigate('/DiscoverAnimals'); 
     };
+
+    const navigateToquiz = () => {
+        navigate('/quiz'); 
+    };
     return (
         <div className="home">
             <h1>Willkommen im <span className="Span-title">Zürich-Zoo!</span></h1>
@@ -34,7 +38,7 @@ const Home = () => {
                 <div className="item5">
                     <h2>Kinderwelt</h2>
                     <p>Spannende Abenteuer warten auf unsere kleinen Gäste.</p>
-                    <button>jetzt Entdecken</button>
+                    <button onClick={navigateToquiz}>jetzt Entdecken</button>
                 </div>
                 <div className="item6">
                     <img src="https://zoo-live.rokka.io/home_landscape_lg_1x/353a6f19f653ab6e78d6f425ab544dcbb520854b/2244-23623-3.jpg?h=3a574668&itok=SQYQN_LQ" alt="Kinderzone" />
