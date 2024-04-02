@@ -1,13 +1,10 @@
-/* Stelle sicher, dass dein HTML und BODY die volle Höhe einnehmen */
 html, body {
     height: 100%;
     margin: 0;
   }
   
-  /* Wrapper für den Inhalt oberhalb des Footers */
   .main-content {
-    min-height: calc(100vh - 120px); /* Adjust 120px to your footer's height */
-    /* Rest des Inhalts-Styles */
+    min-height: calc(100vh - 120px); 
     display: flex;
     flex-direction: column;
   }
@@ -18,7 +15,8 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    position: fixed;
+
     bottom: 0;
     width: -webkit-fill-available;
   }

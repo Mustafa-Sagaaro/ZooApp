@@ -1,12 +1,10 @@
 import '../styles/Footer.css';
 
-// Definiert die Komponente 'Footer'
 const Footer = () => {
     return (
-        // definiert den Footer-Bereich
         <footer className="footer">
             <div className="footer-logo">
-                <img src="./Logo.png" alt="Logo"/>
+                <img src="./Logo.png" alt="Logo" />
             </div>
             <div className="footer-links">
                 <a href="/">Home</a>
