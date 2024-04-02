@@ -35,14 +35,14 @@
 
 button {
   padding: 10px 20px;
-  background-color: #ff4500;
+  background-color: #ff1100;
   color: white;
   border: none;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
 }
 
 .Span-title {

@@ -96,9 +96,9 @@ const DiscoverAnimals = () => {
                                     <p><strong>Standort:</strong> {animalInfo.locations.join(', ')}</p>
                                     <p><strong>Typ:</strong> {animalInfo.characteristics.diet}</p>
                                     <p><strong>Lebensdauer:</strong> {animalInfo.characteristics.lifespan}</p>
-                                    <p>name of young: {animalInfo.characteristics.name_of_young}</p>
-                                    <p>prey: {animalInfo.characteristics.prey} </p>
-                                    <p>habitat: {animalInfo.characteristics.habitat} </p>                            </div>
+                                    <p><strong>name of young:</strong> {animalInfo.characteristics.name_of_young}</p>
+                                    <p><strong>prey:</strong> {animalInfo.characteristics.prey} </p>
+                                    <p><strong>habitat:</strong> {animalInfo.characteristics.habitat} </p>                            </div>
                                 <div className="animal-description">
                                     <p className='description'>Der {animalInfo.name} ist bekannt für seine bemerkenswerten Eigenschaften. Mit einer durchschnittlichen Geschwindigkeit von {animalInfo.characteristics.top_speed} kann dieses Tier beeindruckende Geschwindigkeiten erreichen. Es hat eine typische Lebensspanne von {animalInfo.characteristics.lifespan} und ein Gewichtsbereich von {animalInfo.characteristics.weight}. Die durchschnittliche Größe liegt bei {animalInfo.characteristics.height}. Die Phase der Geschlechtsreife tritt etwa nach {animalInfo.characteristics.age_of_sexual_maturity} ein, und der Zeitpunkt des Abstillens der Jungen ist typischerweise um {animalInfo.characteristics.age_of_weaning}. Der Lebensraum dieses Tieres ist {animalInfo.characteristics.habitat}, was seine Anpassungsfähigkeit und Vielfalt unterstreicht.</p>              </div>
                             </div>
