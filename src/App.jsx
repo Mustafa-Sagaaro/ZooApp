@@ -10,6 +10,7 @@ import Interaktionen from './components/Interaktionen';
 import ZooNewsComponent from "./components/News"
 import Home from './components/Home'
 import NewsDetails from './components/NewsDetails';
+import DiscoverAnimals from './components/DiscoverAnimals'
 
 function App() {
   return (
@@ -20,7 +21,9 @@ function App() {
         <Route path="/impressum" element={<ImpressumPage />} />
         <Route path="/Interaktionen" element={<InteraktionenPage />} />
         <Route path="/News" element={<NewsPage />} />
-        <Route path="/news/:newsId" element={<NewsDetailsPage />} /> {/* New route for news details */}
+        <Route path="/news/:newsId" element={<NewsDetailsPage />} />
+        <Route path="/Discoveranimals" element={<DiscoverAnimalspage />} />
+
       </Routes>
       <Footer />
     </BrowserRouter>
@@ -37,6 +40,12 @@ const AnimatedPage = ({ children }) => (
     {children}
   </motion.div>
 );
+const DiscoverAnimalspage = () => (
+  <AnimatedPage>
+    <DiscoverAnimals />
+  </AnimatedPage>
+);
+
 const NewsDetailsPage = () => (
   <AnimatedPage>
     <NewsDetails />
@@ -48,6 +57,7 @@ const ImpressumPage = () => (
     <Impressum />
   </AnimatedPage>
 );
+
 const HomePage = () => (
   <AnimatedPage>
     <Home />
