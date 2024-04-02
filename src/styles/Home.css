@@ -1,10 +1,73 @@
-.Home {
-  font-family: Arial, sans-serif;
-  max-width: 800px;
-  margin: auto;
-  padding: 20px;
-  color: #ffffff;
-  height: 90vh;
-  margin-top: 10rem;
+.home {
   text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  padding: 40px;
+}
+
+.grid-container img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.grid-container img:hover {
+  transform: scale(1.05);
+}
+
+.grid-container .item1,
+.grid-container .item3,
+.grid-container .item5 {
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ff4500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out; 
+  margin-top: 20px;
+}
+
+.Span-title {
+  color: #cc0000;
+}
+
+button:hover {
+  background-color: #e63900; 
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design für kleinere Bildschirme */
+@media (max-width: 768px) {
+  .grid-container {
+      grid-template-columns: 1fr;
+  }
+
+  .grid-container .item1,
+  .grid-container .item3,
+  .grid-container .item5 {
+    order: 1; 
+  }
+
+  .grid-container img {
+    max-width: 100%;
+    height: auto;
+  }
 }
