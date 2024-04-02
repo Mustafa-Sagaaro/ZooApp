@@ -11,6 +11,7 @@ import ZooNewsComponent from "./components/News"
 import Home from './components/Home'
 import NewsDetails from './components/NewsDetails';
 import DiscoverAnimals from './components/DiscoverAnimals'
+import QuizComponent from './components/Quiz'
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
         <Route path="/News" element={<NewsPage />} />
         <Route path="/news/:newsId" element={<NewsDetailsPage />} />
         <Route path="/Discoveranimals" element={<DiscoverAnimalspage />} />
+        <Route path="/quiz" element={<Quizpage />} />
+
 
       </Routes>
       <Footer />
@@ -43,6 +46,12 @@ const AnimatedPage = ({ children }) => (
 const DiscoverAnimalspage = () => (
   <AnimatedPage>
     <DiscoverAnimals />
+  </AnimatedPage>
+);
+
+const Quizpage = () => (
+  <AnimatedPage>
+    <QuizComponent />
   </AnimatedPage>
 );
 
