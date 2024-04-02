@@ -1,7 +1,12 @@
 import 'react';
 import '../styles/Home.css';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+    let navigate = useNavigate();
+    const navigateToNews = () => {
+        navigate('/News'); 
+    };
     return (
         <div className="home">
             <h1>Willkommen im <span className="Span-title">Zürich-Zoo!</span></h1>
@@ -20,7 +25,7 @@ const Home = () => {
                 <div className="item3">
                     <h2>News</h2>
                     <p>Checken sie die neusten News</p>
-                    <button>News ansehen</button>
+                    <button onClick={navigateToNews} >News ansehen</button>
                 </div>
                 <div className="item5">
                     <h2>Kinderwelt</h2>
