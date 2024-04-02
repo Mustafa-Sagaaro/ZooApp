@@ -1,6 +1,7 @@
 
   import AliceCarousel from 'react-alice-carousel';
   import "react-alice-carousel/lib/alice-carousel.css";
+  import { Link } from 'react-router-dom';
   import "../styles/News.css";
 
   const ZooNewsComponent = () => {
@@ -20,7 +21,14 @@
         <p className="iframe-text">Der Unsichtbare Zoo</p>
         <p>09.02.2024</p>
       </div>,
+      
     ];
+
+    const carouselItems = items.map((item, index) => (
+      <Link to={`/news/${index + 1}`} key={index}>
+        {item}
+      </Link>
+    ));
 
     const responsive = {
       0: { items: 1 },
@@ -29,16 +37,16 @@
 
     return (
       <div className="zoo-news-container">
-        <h1>Willkommen zu den neuesten Zoo-News!</h1>
-        <AliceCarousel
-          autoPlay={true}
-          autoPlayInterval={2000}
-          mouseTracking={true}
-          items={items}
-          responsive={responsive}
-          controlsStrategy="alternate"
-        />
-      </div>
+      <h1>Willkommen zu den neuesten Zoo-News!</h1>
+      <AliceCarousel
+        autoPlay={true}
+        autoPlayInterval={2000}
+        mouseTracking={true}
+        items={carouselItems} // Ändere 'items' zu 'carouselItems' hier
+        responsive={responsive}
+        controlsStrategy="alternate"
+      />
+    </div>
     );
   };
 
