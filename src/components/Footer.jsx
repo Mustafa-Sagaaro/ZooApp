@@ -11,6 +11,7 @@ const Footer = () => {
                 <a href="/Interaktionen">Interaktionen</a>
                 <a href="/News">News</a>
                 <a href="/Impressum">Impressum</a>
+                <a href="/Datenschutzhinweise">Datenschutzhinweise</a>
 
             </div>
             <div className="footer-copy">
