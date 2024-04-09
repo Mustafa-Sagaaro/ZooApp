@@ -22,8 +22,9 @@ function Navbar() {
         {}
         <li><a href="/">Home</a></li>
         <li><a href="/News">News</a></li>
-        <li><a href="./Interaktionen">Interaktionen</a></li>
-        <li><a href="./impressum">Impressum</a></li>
+        <li><a href="/Interaktionen">Interaktionen</a></li>
+        <li><a href="/impressum">Impressum</a></li>
+
         {}
       </ul>
     </nav>

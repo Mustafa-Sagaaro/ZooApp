@@ -12,6 +12,7 @@ import Home from './components/Home'
 import NewsDetails from './components/NewsDetails';
 import DiscoverAnimals from './components/DiscoverAnimals'
 import QuizComponent from './components/Quiz'
+import Datenschutzhinweise from './components/Datenschutzhinweise'
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
         <Route path="/news/:newsId" element={<NewsDetailsPage />} />
         <Route path="/Discoveranimals" element={<DiscoverAnimalspage />} />
         <Route path="/quiz" element={<Quizpage />} />
+        <Route path="/Datenschutzhinweise" element={<Datenschutzhinweisepage />} />
+
 
 
       </Routes>
@@ -46,6 +49,12 @@ const AnimatedPage = ({ children }) => (
 const DiscoverAnimalspage = () => (
   <AnimatedPage>
     <DiscoverAnimals />
+  </AnimatedPage>
+);
+
+const Datenschutzhinweisepage = () => (
+  <AnimatedPage>
+    <Datenschutzhinweise />
   </AnimatedPage>
 );
 
