@@ -12,6 +12,20 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
+  "hosting": {
+    "public": "dist", 
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [ 
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
   "dependencies": {
     "aws-amplify": "^6.0.27",
     "axios": "^1.6.8",
@@ -45,3 +59,4 @@
     "vite": "^5.1.4"
   }
 }
+
