@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import logo from '/Logo.png';
+import { useNavigate } from 'react-router-dom';
 import "../styles/Navbar.css"
 
 function Navbar() {
@@ -8,6 +9,19 @@ function Navbar() {
 
   const toggleMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
+  };
+
+  let navigate = useNavigate();
+  const navigateToNews = () => {
+      navigate('/News'); 
+  };
+
+  const navigateToInteraktionen = () => {
+      navigate('/Interaktionen'); 
+  };
+
+  const navigateToImpressum = () => {
+      navigate('/impressum'); 
   };
 
   return (
@@ -20,10 +34,10 @@ function Navbar() {
       </div>
       <ul className={`nav-links ${mobileMenuOpen ? 'open' : ''}`}>
         {}
-        <li><a href="/">Home</a></li>
-        <li><a href="/News">News</a></li>
-        <li><a href="./Interaktionen">Interaktionen</a></li>
-        <li><a href="./impressum">Impressum</a></li>
+        <li><a href="" onClick={navigateToNews}>Home</a></li>
+        <li><a href="" onClick={navigateToNews}>News</a></li>
+        <li><a href="" onClick={navigateToInteraktionen}>Interaktionen</a></li>
+        <li><a href="" onClick={navigateToImpressum}>Impressum</a></li>
         {}
       </ul>
     </nav>
