@@ -34,7 +34,7 @@ function Navbar() {
       </div>
       <ul className={`nav-links ${mobileMenuOpen ? 'open' : ''}`}>
         {}
-        <li><a href="" onClick={navigateToNews}>Home</a></li>
+        <li><a href="/" >Home</a></li>
         <li><a href="" onClick={navigateToNews}>News</a></li>
         <li><a href="" onClick={navigateToInteraktionen}>Interaktionen</a></li>
         <li><a href="" onClick={navigateToImpressum}>Impressum</a></li>
